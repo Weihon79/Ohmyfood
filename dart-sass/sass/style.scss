@@ -1,3 +1,399 @@
-body {
-    background: #000;
+/* OPTIONS */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+$header-shadow: #00000026;
+
+header {
+    box-shadow: 0px 2px 4px 0px $header-shadow;
+    position: relative;
+
+    & .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.938rem;
+        padding-top: 0.625rem;
+    }
+}
+
+/* FORMULAIRE DE LOCALISATION  */
+
+$bg-color: #EAEAEA;
+$box-shadow: #00000040;
+$size: 1rem;
+$p-color: #353535;
+
+.localisation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px $box-shadow;
+    margin-bottom: 0.375rem;
+    background-color: $bg-color;
+    height: 3.125rem;
+    gap: 1.063rem;
+    font-size: $size;
+
+    & p {
+        font-weight: 500;
+        color: $p-color;
+    }
+}
+
+/* CONTENEUR DE MENU */
+
+$main-bg-color: #F6F6F6;
+$h2-color: black;
+$btn-color: white;
+$btn-bg: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $main-bg-color;
+    text-align: center;
+
+    & h2 {
+        padding: 2rem 3.75rem 0.875rem 3.75rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $h2-color;
+    }
+
+    & h3 {
+        padding-bottom: 1.875rem;
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+
+    & button {
+        margin-bottom: 3.438rem;
+        box-shadow: 0px 4px 10px 0px $box-shadow;
+        border: none;
+        border-radius: 3.125rem;
+        width: 218px;
+        height: 50px;
+        background: $btn-bg;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $btn-color;
+    }
+}
+
+/* CONTENEUR DE FONCTIONNEMENT */
+
+$main-number-color: #9356DC;
+
+.fonctionnement {
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    & h2 {
+        padding: 2.7rem 0 1.875rem 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    & .fonction-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4.375rem;
+        gap: 25px;
+    }
+
+        & .fonction-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            box-shadow: 0px 4px 15px 0px #00000026;
+            border-radius: 1.25rem;
+            width: 322.49px;
+            height: 72.38px;
+            background-color: $main-bg-color;
+        }
+
+            & h3 {
+                position: absolute;
+                left: 80px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            & i {
+                position: absolute;
+                top: 33px;
+                left: 35px;
+                font-size: 1.244rem;
+            }
+
+            & .number {
+                position: absolute;
+                top: 25px;
+                left: -11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                background-color: $main-number-color;
+                font-size: 0.886rem;
+                font-weight: 500;
+                color: white;
+            }
+}
+
+/* RESTAURANTS */
+
+
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.125rem 5vw 3.125rem 5vw;
+    background-color: $main-bg-color;
+
+    & h2 {
+        padding-left: 0.31rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    & .restaurant-cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.25rem;
+        gap: 18px;
+    }
+
+        & a {
+            position: relative;
+        }
+
+            & .card {
+                display: flex;
+                flex-direction: column;
+                border-radius: 15px;
+                height: 251px;
+                background-color: white;
+            }
+
+                & img {
+                    object-fit: cover;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    width: 100%;
+                    height: 70%;
+                }
+
+                & .card-txt {
+                    color: $p-color;
+                    padding: 0.938rem 0 0 0.813rem;
+                }
+
+                    & .card-title {
+                        padding-bottom: 0.19rem;
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                    }
+
+                    & .card-subtitle {
+                        font-size: 1.063rem;
+                        font-weight: 300;
+                    }
+}
+
+/* RESTAURANT CHECKBOX HEART */
+
+.heart-checkbox {
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    cursor: pointer;
+
+    & input {
+        display: none;
+    }
+
+    & .heart {
+        fill: transparent;
+        stroke: #000;
+        stroke-width: 1;
+        transition: fill 0.3s ease;
+        width: 26px;
+        height: 25px;
+    }
+
+    & input:checked + .heart {
+        fill: url(#gradient);
+        stroke-width: 0;
+    }
+}
+
+/* NOUVEAU */
+
+.nouveau-container {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 29px;
+    background: #99E2D0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #008766;
+}
+
+/* FOOTER */
+
+$footer-bg: #353535;
+$footer-color: white;
+$footer-h2font: Shrikhand;
+
+footer {
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: $footer-bg;
+    color: $footer-color;
+
+    & h2 {
+        line-height: 26.24px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-family: $footer-h2font;
+    }
+    
+    & .lien-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    & a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    & .proposer {
+        padding-left: 0.438rem;
+        font-weight: 500;
+    }
+
+    & .devenir {
+        padding-left: 0.25rem;
+        font-weight: 500;
+    }
+
+    & .mention {
+        font-weight: 400;
+    }
+
+    & .contact {
+        font-weight: 400;
+    }
+
+}
+
+/* Correspond aux appareils dépassant 768 pixels */
+@media (min-width: 768px) {
+
+    .restaurant-cards {
+        flex-wrap: wrap !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .restaurant-cards a {
+        width: calc(50% - 50px) !important;
+        margin-bottom: 1.875rem !important;
+    }
+
+}
+
+/* Correspond aux appareils dépassant 1024 pixels */
+@media (min-width: 1024px) {
+
+    .restaurants {
+        padding-bottom: 0.5rem !important;
+    }
+
+    .fonction-container {
+        padding-bottom: 3.125rem !important;
+        justify-content: flex-start !important;
+        flex-direction: row !important;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse !important;
+        justify-content: flex-start !important;
+        align-items: center;
+        gap: 95px;
+        padding: 2.5rem 3.8rem 0.5rem 0 !important;
+    }
+
+    .lien-footer {
+        flex-direction: row !important;
+        gap: 15px !important;
+    }
+
+    .mentions {
+        padding-left: 2rem !important;
+    }
+}
+
+
+/* Correspond aux appareils dépassant 1280 pixels */
+@media (min-width: 1280px) {
+
+    .fonctionnement,
+    .restaurants {
+        padding-left: 10vw !important;
+        padding-right: 10vw !important;
+    }
+
+    .fonctionnement h2,
+    .restaurants h2 {
+        padding-left: 0 !important;
+    }
+
+    .restaurants h2 {
+        padding-bottom: 0.313rem !important;
+    }
+
+}
+
+/* Correspond aux appareils dépassant 1440 pixels */
+@media (min-width: 1440px) {
+
+    .fonctionnement,
+    .restaurants {
+        padding-left: 12vw !important;
+        padding-right: 12vw !important;
+    }
+
 }
