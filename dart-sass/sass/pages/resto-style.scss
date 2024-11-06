@@ -1,0 +1,290 @@
+/* OPTIONS */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header {
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.938rem;
+        padding-top: 0.625rem;
+    }
+
+    &__back-button {
+        top: 30px;
+        left: 25px;
+        position: absolute;
+        color: black;
+    }
+
+}
+
+/* BACKGROUND IMAGE */
+
+.background {
+
+    &__img {
+        object-fit: cover;
+        height: 275px;
+        width: 100%;
+    }
+
+}
+
+/* H1-CONTAINER */
+
+.h1-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+
+.heart-checkbox {
+    padding-top: 1rem;
+    cursor: pointer;
+
+    &__input {
+        display: none;
+    }
+
+    &__heart {
+        fill: transparent;
+        stroke: #000;
+        stroke-width: 1;
+        transition: fill 0.3s ease;
+        width: 26px;
+        height: 25px;
+    }
+
+    &__input:checked + &__heart {
+        fill: url(#gradient);
+        stroke-width: 0;
+    }
+}
+
+/* SECTION MENU */
+
+$menu-bg: #F6F6F6;
+$menu-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$item-bg: white;
+
+.menu-section-1 {
+    position: relative;
+    margin-top: -2rem;
+    border-radius: 2.58rem 2.5rem 0 0;
+    padding: 1rem;
+    background-color: $menu-bg;
+
+
+    &__h1 {
+        margin-left: 0.2rem;
+        padding-top: 1rem;
+        font-size: 1.75rem;
+        font-family: Shrikhand;
+        font-weight: 400;
+    }
+
+}
+
+.menu-category {
+
+    &__h3 {
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+        font-family: Roboto;
+        font-weight: 300;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 2.5rem;
+        height: 0.125rem;
+        background-color: #00b894;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        }
+    }
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 0.938rem;
+    box-shadow: $menu-shadow;
+    border-radius: 0.75rem;
+    padding: 0.938rem;
+    background-color: $item-bg;
+    color: black;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &__description {
+
+        & h4 {
+        margin-bottom: 5px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        }
+
+        & p {
+        font-size: 0.938rem;
+        font-weight: 300;
+        }
+    }
+
+    &__price {
+        align-self: flex-end;
+        font-size: 0.938rem;
+        font-weight: 700;
+    }
+}
+
+/* RESTAURANT CHECKBOX HEART */
+
+
+
+/*  BOUTON COMMANDER */
+
+$btn-bg: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 2.7rem 0 1.5rem 0;
+
+    & button {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+        border: none;
+        border-radius: 3.125rem;
+        width: 186px;
+        height: 50px;
+        background: $btn-bg;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/* FOOTER */
+
+$footer-bg: #353535;
+$footer-color: white;
+$footer-h2font: Shrikhand;
+
+.footer {
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: $footer-bg;
+    color: $footer-color;
+
+    &__h2 {
+        line-height: 26.24px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-family: $footer-h2font;
+    }
+    
+    &__link {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    &__proposer {
+        padding-left: 0.438rem;
+        font-weight: 500;
+    }
+
+    &__devenir {
+        padding-left: 0.25rem;
+        font-weight: 500;
+    }
+
+    &__mentions {
+        font-weight: 400;
+    }
+
+    &__contact {
+        font-weight: 400;
+    }
+
+}
+
+/* Correspond aux appareils dépassant 768 pixels */
+@media (min-width: 768px) {
+
+    .header {
+        padding: 1rem;
+    }
+
+    .background__img {
+        height: 40vh;
+    }
+
+    .h1-container {
+        justify-content: center;
+    }
+
+    .menu-section-1 {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
+
+/* Correspond aux appareils dépassant 1024 pixels */
+@media (min-width: 1024px) {
+
+    .background__img {
+        height: 50vh;
+    }
+
+    .menu-section-1 {
+        max-width: 1055px;
+        margin: 0 auto;
+        margin-top: -2rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 95px;
+        padding: 2.5rem 3.8rem 0.5rem 0;
+
+        &__link {
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &__mentions {
+            padding-left: 2rem;
+        }
+    }
+
+}
