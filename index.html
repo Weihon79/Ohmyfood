@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./dart-sass/sass/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>    
 
 <!--CONTENU DE MA PAGE-->
 <body>
-    <div class="main-container">
+    <div class="main-content">
         <!--CECI EST LE HEADER-->
-        <header>
-            <div class="logo">
+        <header class="header">
+            <div class="header__logo">
                 <img src="/Images_et_textes_Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             </div>
         </header>
@@ -29,149 +29,154 @@
         <!--CECI EST LE FORMULAIRE DE LOCALISATION-->    
             <div class="localisation-container">
                 <i class="fa-solid fa-location-dot fa-xs" style="color: #353535;"></i>
-                <p>Paris, Belleville</p>
+                <p class="localisation-container__p">Paris, Belleville</p>
             </div>
         <!--CECI EST LE CONTENEUR DE MENU-->
             <div class="menu-container">
-                <h2>Réservez le menu qui vous convient</h2>
-                <h3>Découvrez des restaurants d'exception sélectionnés par nos soins</h3>
-                <button>Explorer nos restaurants</button>
+                <h1 class="menu-container__h1">Réservez le menu qui vous convient</h1>
+                <p class="menu-container__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button class="menu-container__button menu-container__button--linear">Explorer nos restaurants</button>
             </div>
         <!--CECI EST CONTENNEUR DE FONCTIONNEMENT-->
             <div class="fonctionnement">
-                <h2>Fonctionnement</h2>
-                <div class="fonction-container">
-                    <div class="fonction-box">
-                        <div class="number">1</div>
-                        <div class="logo-1"><i class="fa-solid fa-mobile-screen-button fa-sm" style="color: #7e7e7e;"></i></div>
-                        <h3>Choisissez un restaurant</h3>
-                    </div>
-                    <div class="fonction-box">
-                        <div class="number">2</div>
-                        <div class="logo-2"><i class="fa-solid fa-list fa-sm" style="color: #7e7e7e;"></i></div>
-                        <h3>Composez votre menu</h3>
-                    </div>
-                    <div class="fonction-box">
-                        <div class="number">3</div>
-                        <div class="logo-3"><i class="fa-solid fa-store fa-sm" style="color: #9356dc;"></i></div>
-                        <h3>Dégustez au restaurant</h3>
-                    </div>
+                <div class="main-container">
+                    <h2 class="fonctionnement__h2">Fonctionnement</h2>
+                    <div class="fonctionnement__container">
+                        <div class="fonctionnement__box">
+                            <div class="fonctionnement__number fonctionnement__number--purple">1</div>
+                            <div class="fonctionnement__i"><i class="fa-solid fa-mobile-screen-button fa-sm"></i></div>
+                            <h3 class="fonctionnement__h3">Choisissez un restaurant</h3>
+                        </div>
+                        <div class="fonctionnement__box">
+                            <div class="fonctionnement__number fonctionnement__number--purple">2</div>
+                            <div class="fonctionnement__i"><i class="fa-solid fa-list fa-sm"></i></div>
+                            <h3 class="fonctionnement__h3">Composez votre menu</h3>
+                        </div>
+                        <div class="fonctionnement__box">
+                            <div class="fonctionnement__number fonctionnement__number--purple">3</div>
+                            <div class="fonctionnement__i fonctionnement__i--purple"><i class="fa-solid fa-store fa-sm"></i></div>
+                            <h3 class="fonctionnement__h3">Dégustez au restaurant</h3>
+                        </div>
+                    </div>    
                 </div>
             </div> 
-        <!--CECI EST LA SECTION RESTAURANTS-->
+            <!--CECI EST LA SECTION RESTAURANTS-->
             <section class="restaurants">
-                <h2>Restaurants</h2>
-                <div class="restaurant-cards">
-                    <a href="#"><!--LA PALETTE DU GOUT-->
-                        <article class="card">
-                            <img src="Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la palette du goût">
-                            <div class="card-txt">    
-                                <h3 class="card-title">La palette du goût</h3>
-                                <p class="card-subtitle">Ménilmontant</p>       
-                            </div>
-                            <label class="heart-checkbox">
-                                <input type="checkbox" />
-                                <svg viewBox="0 0 24 24" class="heart">
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </label>
-                            <div class="nouveau-container">
-                                <p>Nouveau</p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#"><!--LA NOTE ENCHANTEE-->
-                        <article class="card">
-                            <img src="Images_et_textes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de la note enchantée">
-                             <div class="card-txt">    
-                                <h3 class="card-title">La note enchantée</h3>
-                                <p class="card-subtitle">Charonne</p>       
-                            </div>
-                            <label class="heart-checkbox">
-                                <input type="checkbox" />
-                                <svg viewBox="0 0 24 24" class="heart">
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </label>
-                            <div class="nouveau-container">
-                                <p>Nouveau</p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#"><!--A LA FRANCAISE-->
-                        <article class="card">
-                            <img src="Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image de à la française">
-                            <div class="card-txt">    
-                                <h3 class="card-title">À la française</h3>
-                                <p class="card-subtitle">Cité Rouge</p>       
-                            </div>
-                            <label class="heart-checkbox">
-                                <input type="checkbox" />
-                                <svg viewBox="0 0 24 24" class="heart">
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </label>
-                        </article>
-                    </a>
-                    <a href="#"><!--LE DELICE DES SENS-->
-                        <article class="card">
-                            <img src="Images_et_textes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image le délice des sens">
-                            <div class="card-txt">    
-                                <h3 class="card-title">Le délice des sens</h3>
-                                <p class="card-subtitle">Folie-Méricourt</p>       
-                            </div>
-                            <label class="heart-checkbox">
-                                <input type="checkbox" />
-                                <svg viewBox="0 0 24 24" class="heart">
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </label>
-                        </article>
-                    </a>
-                </div>    
+                <div class="main-container">
+                    <h2 class="restaurants__h2">Restaurants</h2>
+                    <div class="restaurants__cards">
+                        <a class="restaurants__a" href="./restaurants/La palette du goût.html"><!--LA PALETTE DU GOUT-->
+                            <article class="restaurants__card">
+                                <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la palette du goût">
+                                <div class="restaurants__card-txt">    
+                                    <h3 class="restaurants__card-title">La palette du goût</h3>
+                                    <p class="restaurants__card-subtitle">Ménilmontant</p>       
+                                </div>
+                                <label class="heart-checkbox">
+                                    <input class="heart-checkbox__input" type="checkbox" />
+                                    <svg viewBox="0 0 24 24" class="heart-checkbox__heart">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </label>
+                                <div class="nouveau-container nouveau-container--green">
+                                    <p>Nouveau</p>
+                                </div>
+                            </article>
+                        </a>
+                        <a class="restaurants__a" href="./restaurants/la note enchantée.html"><!--LA NOTE ENCHANTEE-->
+                            <article class="restaurants__card">
+                                <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de la note enchantée">
+                                    <div class="restaurants__card-txt">    
+                                    <h3 class="restaurants__card-title">La note enchantée</h3>
+                                    <p class="restaurants__card-subtitle">Charonne</p>       
+                                </div>
+                                <label class="heart-checkbox">
+                                    <input class="heart-checkbox__input" type="checkbox" />
+                                    <svg viewBox="0 0 24 24" class="heart-checkbox__heart">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </label>
+                                <div class="nouveau-container nouveau-container--green">
+                                    <p>Nouveau</p>
+                                </div>
+                            </article>
+                        </a>
+                        <a class="restaurants__a" href="./restaurants/À la française.html"><!--A LA FRANCAISE-->
+                            <article class="restaurants__card">
+                                <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image de à la française">
+                                <div class="restaurants__card-txt">    
+                                    <h3 class="restaurants__card-title">À la française</h3>
+                                    <p class="restaurants__card-subtitle">Cité Rouge</p>       
+                                </div>
+                                <label class="heart-checkbox">
+                                    <input class="heart-checkbox__input" type="checkbox" />
+                                    <svg viewBox="0 0 24 24" class="heart-checkbox__heart">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </label>
+                            </article>
+                        </a>
+                        <a class="restaurants__a" href="./restaurants/Le délice des sens.html"><!--LE DELICE DES SENS-->
+                            <article class="restaurants__card">
+                                <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image le délice des sens">
+                                <div class="restaurants__card-txt">    
+                                    <h3 class="restaurants__card-title">Le délice des sens</h3>
+                                    <p class="restaurants__card-subtitle">Folie-Méricourt</p>       
+                                </div>
+                                <label class="heart-checkbox">
+                                    <input class="heart-checkbox__input" type="checkbox" />
+                                    <svg viewBox="0 0 24 24" class="heart-checkbox__heart">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#9356DC; stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FF79DA; stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </label>
+                            </article>
+                        </a>
+                    </div>   
+                </div>   
             </section>
 
-        <footer>
-            <h2>ohmyfood</h2>
-            <div class="lien-footer">
-                <a href="#">
-                    <i class="fa-solid fa-utensils fa-sm" style="color: #ffffff;"></i>
-                    <span class="proposer">Proposer un restaurant</span>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-handshake-angle fa-xs" style="color: #ffffff;"></i>
-                    <span class="devenir">Devenir partenaire</span>
-                </a>
-                <a href="#" class="mentions">Mentions légales</a>
-                <a href="#" class="contact">Contact</a>
-            </div>
-        </footer>
-        </main>
-    </div>    
+            <!--CECI EST LE FOOTER-->    
+            <footer class="footer">
+                <h2 class="footer__h2">ohmyfood</h2>
+                <div class="footer__link">
+                    <a class="footer__a" href="#">
+                        <i class="fa-solid fa-utensils fa-sm" style="color: #ffffff;"></i>
+                        <span class="footer__proposer">Proposer un restaurant</span>
+                    </a>
+                    <a class="footer__a" href="#">
+                        <i class="fa-solid fa-handshake-angle fa-xs" style="color: #ffffff;"></i>
+                        <span class="footer__devenir">Devenir partenaire</span>
+                    </a>
+                    <a class="footer__a footer__mentions" href="#">Mentions légales</a>
+                    <a class="footer__a footer__contact" href="#">Contact</a>
+                </div>
+            </footer>
+        </main> 
+    </div>  
 </body>
 
 </html>
