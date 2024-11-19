@@ -1,0 +1,19 @@
+@use "../utils/variables.scss" as v;
+@use "../utils/mixins.scss" as m;
+
+.localisation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include m.box-shadow(0px, 4px, 4px, v.$medium-shadow);
+    margin-bottom: 0.375rem;
+    background-color: v.$bg-color;
+    height: 3.125rem;
+    gap: 1.063rem;
+    font-size: v.$size;
+
+    &__p {
+        font-weight: 500;
+        color: v.$p-color;
+    }
+}

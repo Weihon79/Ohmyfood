@@ -63,7 +63,7 @@
   margin-top: -2.5rem;
   border-radius: 2.58rem 2.5rem 0 0;
   padding: 1rem;
-  background-color: #F6F6F6;
+  background-color: #F3F3F3;
 }
 .menu-section-1__h1 {
   margin-left: 0.2rem;
@@ -101,7 +101,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.938rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 0.75rem;
   background-color: white;
   color: black;
@@ -223,6 +223,7 @@
   font-weight: 400;
 }
 
+/* MEDIA QUERIES */
 /* Correspond aux appareils dépassant 768 pixels */
 @media (min-width: 768px) {
   .header {

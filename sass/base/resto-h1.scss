@@ -1,0 +1,31 @@
+$spacing-unit: 2rem;
+
+.h1-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $spacing-unit;
+}
+
+.heart-checkbox {
+    padding-top: 1rem;
+    cursor: pointer;
+
+    &__input {
+        display: none;
+    }
+
+    &__heart {
+        fill: transparent;
+        stroke: #000;
+        stroke-width: 1;
+        transition: fill 0.3s ease;
+        width: 26px;
+        height: 25px;
+    }
+
+    &__input:hover + &__heart {
+        fill: url(#gradient);
+        stroke-width: 0;
+    }
+}

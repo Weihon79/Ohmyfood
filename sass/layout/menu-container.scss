@@ -1,0 +1,47 @@
+@use "../utils/variables.scss" as v;
+@use "../utils/mixins.scss" as m;
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px 55px 25px;
+    gap: 15px;
+    background-color: v.$main-bg-color;
+    text-align: center;
+
+    &__h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: v.$h2-color;
+    }
+
+    &__p {
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+
+    &__button {
+        box-shadow: 0px 4px 10px 0px v.$medium-shadow;
+        border: none;
+        border-radius: 3.125rem;
+        margin-top: 10px;
+        width: 218px;
+        height: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: v.$btn-color;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2509803922);
+            opacity: 0.7;
+            transition: opacity 0.7s ease-out;
+            scale: (1.02);
+        }
+
+        &--linear {
+            background: v.$btn-bg;
+        }
+    }
+}

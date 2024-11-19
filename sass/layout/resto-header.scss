@@ -1,0 +1,18 @@
+.header {
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.938rem;
+        padding-top: 0.625rem;
+    }
+
+    &__back-button {
+        top: 30px;
+        left: 25px;
+        position: absolute;
+        color: black;
+    }
+
+}

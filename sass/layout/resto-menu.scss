@@ -1,0 +1,118 @@
+@use "../utils/variables.scss" as v;
+
+.menu-section-1 {
+    position: relative;
+    margin-top: -2.5rem;
+    border-radius: 2.58rem 2.5rem 0 0;
+    padding: 1rem;
+    background-color: v.$menu-bg;
+
+
+    &__h1 {
+        margin-left: 0.2rem;
+        padding-top: 1rem;
+        font-size: 1.75rem;
+        font-family: Shrikhand;
+        font-weight: 400;
+    }
+
+}
+
+.main-container {
+    width: 100%;
+}
+
+.menu-category {
+
+    &__h3 {
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+        font-family: Roboto;
+        font-weight: 300;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 2.5rem;
+        height: 0.125rem;
+        background-color: #00b894;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        }
+    }
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.938rem;
+    box-shadow: v.$menu-shadow;
+    border-radius: 0.75rem;
+    background-color: v.$item-bg;
+    color: black;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__description {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding-left: 1rem;
+
+        & h4 {        
+        margin-bottom: 5px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        }
+
+        & p {
+        font-size: 0.938rem;
+        font-weight: 300;
+        }
+    }
+
+    &__hover {
+        display: flex;
+        height: 77px;
+   }
+
+    &__price {
+        align-self: flex-end;
+        margin-right: 15px;
+        padding-bottom: 1rem;
+        font-size: 0.938rem;
+        font-weight: 700;
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99E2D0;
+        width: 0;
+        height: 77px;
+
+        transition: width 0.2s ease-out;
+
+        & .secondary-color {
+            font-size: 22px;
+            color: white;
+        }
+    }
+
+    &:hover &__check {
+        width: 60px;
+    }
+}
+
+.menu-item__description h4,
+.menu-item__description p {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;          
+}

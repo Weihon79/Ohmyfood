@@ -271,6 +271,7 @@
   font-weight: 400;
 }
 
+/* MEDIA QUERIES */
 /* Correspond aux appareils dépassant 768 pixels */
 @media (min-width: 768px) {
   .restaurants__cards {

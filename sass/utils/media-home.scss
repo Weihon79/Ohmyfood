@@ -1,0 +1,71 @@
+/* Correspond aux appareils dépassant 768 pixels */
+@media (min-width: 768px) {
+
+    .restaurants {
+
+        &__cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+        &__a {
+            width: calc(50% - 50px);
+            margin-bottom: 1.875rem;
+        }
+    }
+
+}
+
+/* Correspond aux appareils dépassant 1024 pixels */
+@media (min-width: 1024px) {
+
+    .main-container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .header, .localisation-container {
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .menu-container__h1 {
+        font-size: 2.5rem;
+    }
+
+    .restaurants {
+        padding-bottom: 0.5rem;
+
+            &__h2 {
+                padding-left: 0;
+            }
+    }
+
+    .fonctionnement__container {
+        padding-bottom: 3.125rem;
+        flex-direction: row;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        gap: 35px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 95px;
+        padding: 2.5rem 3.8rem 0.5rem 0;
+
+        &__link {
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &__mentions {
+            padding-left: 2rem;
+        }
+    }
+
+}

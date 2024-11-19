@@ -1,0 +1,16 @@
+@use "../utils/mixins.scss" as m;
+
+$soft-shadow: #00000026;
+
+.header {
+    position: relative;
+    @include m.box-shadow(0px, 2px, 4px);
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.938rem;
+        padding-top: 0.625rem;
+    }
+}

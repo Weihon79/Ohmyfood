@@ -1,0 +1,54 @@
+/* Correspond aux appareils dépassant 768 pixels */
+@media (min-width: 768px) {
+
+    .header {
+        padding: 1rem;
+    }
+
+    .background__img {
+        height: 40vh;
+    }
+
+    .h1-container {
+        justify-content: center;
+    }
+
+}
+
+/* Correspond aux appareils dépassant 1024 pixels */
+@media (min-width: 1024px) {
+
+    .main-container {
+        max-width: 634px;
+        margin: 0 auto;
+    }
+
+    .background__img {
+        height: 50vh;
+    }
+
+    .menu-section-1 {
+        max-width: 1055px;
+        margin: 0 auto;
+        margin-top: -2rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 95px;
+        padding: 2.5rem 3.8rem 0.5rem 0;
+
+        &__link {
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &__mentions {
+            padding-left: 2rem;
+        }
+    }
+
+}
