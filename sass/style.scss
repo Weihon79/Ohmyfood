@@ -37,7 +37,7 @@
         transform-origin: top; /* Départ de l'ouverture depuis le haut */
     }
     50% {
-        opacity: 1; /* L'élément devient visible */
+        opacity: 0.5; /* L'élément devient visible */
         transform: scaleY(1.1); /* L'élément s'ouvre légèrement (déformation verticale) */
     }
     100% {
