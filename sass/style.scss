@@ -25,39 +25,19 @@
 /* MEDIA QUERIES */
 @use "./utils/media-home.scss";
 
-
-/* Animation pour l'ouverture et la fermeture des éléments */
-@keyframes pageOpenClose {
-    0% {
-        opacity: 0; /* Commence invisible */
-        transform: scaleY(0); /* L'élément est complètement comprimé verticalement */
-        transform-origin: top; /* Départ de l'ouverture depuis le haut */
-    }
-    50% {
-        opacity: 0.5; /* L'élément devient visible */
-        transform: scaleY(1.1); /* L'élément s'ouvre légèrement (déformation verticale) */
-    }
-    100% {
-        opacity: 1; /* L'élément reste visible */
-        transform: scaleY(1); /* L'élément se stabilise à sa taille normale */
-    }
-}
-
 /* Animation pour l'apparition */
-@keyframes slideIn {
+@keyframes zoomOutEffect {
     0% {
-        opacity: 0;
-        transform: translateY(50px); /* Légère translation depuis le bas */
+        transform: scale(1.2);
+        opacity: 0.9;
     }
     100% {
+        transform: scale(1);
         opacity: 1;
-        transform: translateY(0); /* Retour à la position initiale */
     }
 }
 
-/* Application de l'animation sur le contenu principal */
+/* Applique l'effet au chargement */
 .main-content {
-    opacity: 0.5; /* Démarre avec une opacité de 0 */
-    transform: translateY(50px); /* Position initiale légèrement en bas */
-    animation: slideIn 1s ease-out forwards; /* Animation douce */
+    animation: zoomOutEffect 0.5s ease-out;
 }

@@ -304,21 +304,19 @@
   }
 }
 /* Animation pour l'apparition */
-@keyframes slideIn {
+@keyframes zoomInEffect {
   0% {
-    opacity: 0;
-    transform: translateY(50px); /* Légère translation depuis le bas */
+    transform: scale(0.8);
+    opacity: 0.9;
   }
   100% {
+    transform: scale(1);
     opacity: 1;
-    transform: translateY(0); /* Retour à la position initiale */
   }
 }
-/* Application de l'animation sur le contenu principal */
+/* Applique l'effet au chargement */
 .main-content {
-  opacity: 0.5; /* Démarre avec une opacité de 0 */
-  transform: translateY(50px); /* Position initiale légèrement en bas */
-  animation: slideIn 1s ease-out forwards; /* Animation douce */
+  animation: zoomInEffect 0.5s ease-out;
 }
 
 /*# sourceMappingURL=resto-style.css.map */
