@@ -21,6 +21,9 @@
   position: absolute;
   color: black;
 }
+.header__back-button:hover {
+  transform: scale(1.5);
+}
 
 /* BACKGROUND IMAGE */
 .background__img {
@@ -31,30 +34,65 @@
 
 /* H1-CONTAINER */
 .h1-container {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  max-width: 325px;
+  margin: 0 auto;
+  padding-right: 45px;
 }
-
-.heart-checkbox {
-  padding-top: 1rem;
-  cursor: pointer;
+.h1-container h1 {
+  position: relative;
 }
-.heart-checkbox__input {
-  display: none;
+.h1-container::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  top: 60%;
+  right: -25px;
+  padding-right: 35px;
 }
-.heart-checkbox__heart {
-  fill: transparent;
-  stroke: #000;
-  stroke-width: 1;
-  transition: fill 0.3s ease;
-  width: 26px;
-  height: 25px;
+.h1-container::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  position: absolute;
+  top: 60%;
+  right: -25px;
+  padding-right: 35px;
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
 }
-.heart-checkbox__input:hover + .heart-checkbox__heart {
-  fill: url(#gradient);
-  stroke-width: 0;
+.h1-container:hover::after {
+  opacity: 1;
 }
 
 /* SECTION MENU */
@@ -66,7 +104,6 @@
   background-color: #F3F3F3;
 }
 .menu-section-1__h1 {
-  margin-left: 0.2rem;
   padding-top: 1rem;
   font-size: 1.75rem;
   font-family: Shrikhand;

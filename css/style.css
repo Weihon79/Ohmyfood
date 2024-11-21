@@ -178,8 +178,56 @@
   height: 70%;
 }
 .restaurants__card-txt {
+  position: relative;
   color: #353535;
   padding: 0.938rem 0 0 0.813rem;
+}
+.restaurants__card-txt::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+}
+.restaurants__card-txt::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+.restaurants__card-txt:hover::after {
+  opacity: 1;
 }
 .restaurants__card-title {
   padding-bottom: 0.19rem;
@@ -189,29 +237,6 @@
 .restaurants__card-subtitle {
   font-size: 1.063rem;
   font-weight: 300;
-}
-
-/* RESTAURANT CHECKBOX HEART */
-.heart-checkbox {
-  position: absolute;
-  bottom: 25px;
-  right: 35px;
-  cursor: pointer;
-}
-.heart-checkbox__input {
-  display: none;
-}
-.heart-checkbox__heart {
-  fill: transparent;
-  stroke: #000;
-  stroke-width: 1;
-  transition: fill 0.3s ease;
-  width: 26px;
-  height: 25px;
-}
-.heart-checkbox__input:hover + .heart-checkbox__heart {
-  fill: url(#gradient);
-  stroke-width: 0;
 }
 
 /* NOUVEAU */

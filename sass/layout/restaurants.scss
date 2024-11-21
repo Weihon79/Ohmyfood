@@ -1,4 +1,5 @@
 @use "../utils/variables.scss" as v;
+@use "../utils/mixins.scss" as m;
 
 .restaurants {
     display: flex;
@@ -41,8 +42,27 @@
                 }
 
                 &__card-txt {
+                    position: relative;
                     color: v.$p-color;
                     padding: 0.938rem 0 0 0.813rem;
+
+                    &::before {
+                    @include m.heart;
+                    @include m.heart-position-card;
+                    }
+
+                    &::after {
+                    @include m.heart;
+                    @include m.gradient(1);
+                    @include m.heart-position-card;
+                    opacity: 0;
+                    color: transparent;
+                    font-weight: 900;
+                    }
+
+                    &:hover::after {
+                    opacity: 1;
+                    }
                 }
 
                     &__card-title {

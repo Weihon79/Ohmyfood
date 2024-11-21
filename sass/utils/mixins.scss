@@ -1,3 +1,42 @@
 @mixin box-shadow($h-offset: 0px, $v-offset: 2px, $blur-radius: 4px, $color: #00000026) {
     box-shadow: $h-offset $v-offset $blur-radius $color;
 }
+
+@mixin gradient($opacity:1) {
+    background-image: linear-gradient(
+        to top,
+        rgba(147, 86, 220, $opacity),
+        rgba(255, 121, 218, $opacity)
+    );
+}
+
+@mixin heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f004";
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    color: inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+@mixin heart-position-card {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+}
+
+@mixin heart-position-page {
+    position: absolute;
+    top: 60%;
+    right: -25px;
+    padding-right: 35px;
+}

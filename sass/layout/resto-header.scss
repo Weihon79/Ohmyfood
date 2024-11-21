@@ -13,6 +13,10 @@
         left: 25px;
         position: absolute;
         color: black;
+
+        &:hover {
+            transform: scale(1.5);
+        }
     }
 
 }

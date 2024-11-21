@@ -1,4 +1,5 @@
 @use "../utils/variables.scss" as v;
+@use "../utils/mixins.scss" as m;
 
 .menu-section-1 {
     position: relative;
@@ -9,7 +10,6 @@
 
 
     &__h1 {
-        margin-left: 0.2rem;
         padding-top: 1rem;
         font-size: 1.75rem;
         font-family: Shrikhand;
