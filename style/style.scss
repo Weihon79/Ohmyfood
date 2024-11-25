@@ -1,32 +1,35 @@
 /* OPTIONS */
-@use "./base/base.scss";
+@use "../sass/base/base.scss";
+
+/* LOADER */
+@use "../sass/layout/loader.scss";
 
 /* LOADER */
 @use "./layout/loader.scss";
 
 /* HEADER */
-@use "./layout/header.scss";
+@use "../sass/layout/header.scss";
 
 /* FORMULAIRE DE LOCALISATION  */
-@use "./layout/localisation.scss";
+@use "../sass/layout/localisation.scss";
 
 /* CONTENEUR DE MENU */
-@use "./layout/menu-container.scss";
+@use "../sass/layout/menu-container.scss";
 
 /* CONTENEUR DE FONCTIONNEMENT */
-@use "./layout/fonctionnement.scss";
+@use "../sass/layout/fonctionnement.scss";
 
 /* RESTAURANTS */
-@use "./layout/restaurants.scss";
+@use "../sass/layout/restaurants.scss";
 
 /* NOUVEAU */
-@use "./components/nouveau-container.scss";
+@use "../sass/components/nouveau-container.scss";
 
 /* FOOTER */
-@use "./layout/footer.scss";
+@use "../sass/layout/footer.scss";
 
 /* MEDIA QUERIES */
-@use "./utils/media-home.scss";
+@use "../sass/utils/media-home.scss";
 
 /* Animation pour l'apparition */
 @keyframes zoomOutEffect {
