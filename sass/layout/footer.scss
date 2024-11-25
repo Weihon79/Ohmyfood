@@ -24,6 +24,10 @@
     &__a {
         color: v.$footer-color;
         font-size: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__proposer {

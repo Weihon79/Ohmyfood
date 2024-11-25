@@ -1,6 +1,9 @@
 /* OPTIONS */
 @use "./base/resto-base.scss";
 
+/* LOADER */
+@use "./layout/loader.scss";
+
 /* HEADER */
 @use "./layout/resto-header.scss";
 

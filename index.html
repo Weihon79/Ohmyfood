@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil Ohmyfood</title>
+    <link rel="icon" type="image/x-icon" href="/restauration.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,14 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>    
 
 <!--CONTENU DE MA PAGE-->
 <body>
-    <div class="main-content zoomOut">
+        <div class="main-content zoomOut">
+        <!--LOADER-->
+        <div class="loader"></div>
+
         <!--CECI EST LE HEADER-->
         <header class="header">
             <div class="header__logo">
@@ -67,7 +69,7 @@
                 <div class="main-container">
                     <h2 class="restaurants__h2">Restaurants</h2>
                     <div class="restaurants__cards">
-                        <a class="restaurants__a" href="./restaurants/La_palette_du_goût.html"><!--LA PALETTE DU GOUT-->
+                        <a class="restaurants__a" href="./pages/la_palette_du_gout.html"><!--LA PALETTE DU GOUT-->
                             <article class="restaurants__card">
                                 <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la palette du goût">
                                 <div class="restaurants__card-txt">    
@@ -79,7 +81,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="restaurants__a" href="./restaurants/la_note_enchantée.html"><!--LA NOTE ENCHANTEE-->
+                        <a class="restaurants__a" href="./pages/la_note_enchantee.html"><!--LA NOTE ENCHANTEE-->
                             <article class="restaurants__card">
                                 <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de la note enchantée">
                                     <div class="restaurants__card-txt">    
@@ -91,7 +93,8 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="restaurants__a" href="./restaurants/À_la_française.html"><!--A LA FRANCAISE-->
+
+                        <a class="restaurants__a" href="./pages/a_la_francaise.html"><!--A LA FRANCAISE-->
                             <article class="restaurants__card">
                                 <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image de à la française">
                                 <div class="restaurants__card-txt">    
@@ -100,7 +103,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="restaurants__a" href="./restaurants/Le_délice_des_sens.html"><!--LE DELICE DES SENS-->
+                        <a class="restaurants__a" href="./pages/Le_delice_des_sens.html"><!--LE DELICE DES SENS-->
                             <article class="restaurants__card">
                                 <img class="restaurants__img" src="Images_et_textes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image le délice des sens">
                                 <div class="restaurants__card-txt">    
@@ -112,24 +115,23 @@
                     </div>   
                 </div>   
             </section>
-
-            <!--CECI EST LE FOOTER-->    
-            <footer class="footer">
-                <h2 class="footer__h2">ohmyfood</h2>
-                <div class="footer__link">
-                    <a class="footer__a" href="#">
-                        <i class="fa-solid fa-utensils fa-sm"></i>
-                        <span class="footer__proposer">Proposer un restaurant</span>
-                    </a>
-                    <a class="footer__a" href="#">
-                        <i class="fa-solid fa-handshake-angle fa-xs"></i>
-                        <span class="footer__devenir">Devenir partenaire</span>
-                    </a>
-                    <a class="footer__a footer__mentions" href="#">Mentions légales</a>
-                    <a class="footer__a footer__contact" href="#">Contact</a>
-                </div>
-            </footer>
         </main> 
+
+        <footer class="footer">
+            <h2 class="footer__h2">ohmyfood</h2>
+            <div class="footer__link">
+                <a class="footer__a" href="#">
+                    <i class="fa-solid fa-utensils fa-sm"></i>
+                    <span class="footer__proposer">Proposer un restaurant</span>
+                </a>
+                <a class="footer__a" href="#">
+                    <i class="fa-solid fa-handshake-angle fa-xs"></i>
+                    <span class="footer__devenir">Devenir partenaire</span>
+                </a>
+                <a class="footer__a footer__mentions" href="#">Mentions légales</a>
+                <a class="footer__a footer__contact" href="#">Contact</a>
+            </div>
+        </footer>
     </div>  
 </body>
 

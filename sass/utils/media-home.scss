@@ -1,6 +1,5 @@
 /* Correspond aux appareils dépassant 768 pixels */
 @media (min-width: 768px) {
-
     .restaurants {
 
         &__cards {
@@ -10,12 +9,13 @@
         }
 
         &__a {
-            width: calc(50% - 50px);
+            width: calc(50% - 25px);
             margin-bottom: 1.875rem;
         }
     }
 
 }
+
 
 /* Correspond aux appareils dépassant 1024 pixels */
 @media (min-width: 1024px) {
@@ -39,6 +39,10 @@
 
             &__h2 {
                 padding-left: 0;
+            }
+
+            &__a {
+                width: calc(50% - 50px);
             }
     }
 

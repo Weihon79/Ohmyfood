@@ -1,6 +1,9 @@
 /* OPTIONS */
 @use "./base/base.scss";
 
+/* LOADER */
+@use "./layout/loader.scss";
+
 /* HEADER */
 @use "./layout/header.scss";
 
