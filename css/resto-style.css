@@ -147,8 +147,7 @@
 .main-container {
   width: 100%;
 }
-
-.menu-category__h3 {
+.main-container h3 {
   position: relative;
   margin-top: 2rem;
   margin-bottom: 1.2rem;
@@ -156,7 +155,7 @@
   font-family: Roboto;
   font-weight: 300;
 }
-.menu-category__h3::before {
+.main-container h3::before {
   content: "";
   display: block;
   width: 2.5rem;
@@ -178,6 +177,38 @@
   color: black;
   overflow: hidden;
   cursor: pointer;
+  animation: appear 1s;
+  animation-fill-mode: both;
+}
+.menu-item:nth-child(1) {
+  animation-delay: 200ms;
+}
+.menu-item:nth-child(2) {
+  animation-delay: 400ms;
+}
+.menu-item:nth-child(3) {
+  animation-delay: 600ms;
+}
+.menu-item:nth-child(4) {
+  animation-delay: 800ms;
+}
+.menu-item:nth-child(5) {
+  animation-delay: 1000ms;
+}
+.menu-item:nth-child(6) {
+  animation-delay: 1200ms;
+}
+.menu-item:nth-child(7) {
+  animation-delay: 1400ms;
+}
+.menu-item:nth-child(8) {
+  animation-delay: 1600ms;
+}
+.menu-item:nth-child(9) {
+  animation-delay: 1800ms;
+}
+.menu-item:nth-child(10) {
+  animation-delay: 2000ms;
 }
 .menu-item__description {
   display: block;
@@ -338,6 +369,18 @@
   }
   .footer__mentions {
     padding-left: 2rem;
+  }
+}
+/* ANIMATIONS */
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* Animation pour l'apparition */

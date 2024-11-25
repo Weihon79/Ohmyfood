@@ -25,6 +25,9 @@
 /* MEDIA QUERIES */
 @use "./utils/media-resto.scss";
 
+/* ANIMATIONS */
+@use "./utils/animations.scss";
+
 /* Animation pour l'apparition */
 @keyframes zoomInEffect {
     0% {
