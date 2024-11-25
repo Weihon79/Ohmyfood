@@ -18,6 +18,11 @@
 /* Correspond aux appareils dépassant 1024 pixels */
 @media (min-width: 1024px) {
 
+    .main-container {
+        max-width: 634px;
+        margin: 0 auto;
+    }
+
     .background__img {
         height: 50vh;
     }

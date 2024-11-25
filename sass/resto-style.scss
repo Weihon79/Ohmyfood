@@ -1,32 +1,29 @@
 /* OPTIONS */
-@use "../sass/base/resto-base.scss";
-
-/* LOADER */
-@use "../sass/layout/loader.scss";
+@use "./base/resto-base.scss";
 
 /* LOADER */
 @use "./layout/loader.scss";
 
 /* HEADER */
-@use "../sass/layout/resto-header.scss";
+@use "./layout/resto-header.scss";
 
 /* BACKGROUND IMAGE */
-@use "../sass/layout/resto-background-img.scss";
+@use "./layout/resto-background-img.scss";
 
 /* H1-CONTAINER */
-@use "../sass/base/resto-h1.scss";
+@use "./base/resto-h1.scss";
 
 /* SECTION MENU */
-@use "../sass/layout/resto-menu.scss";
+@use "./layout/resto-menu.scss";
 
 /*  BOUTON COMMANDER */
-@use "../sass/components/resto-button.scss";
+@use "./components/resto-button.scss";
 
 /* FOOTER */
-@use "../sass/layout/footer.scss";
+@use "./layout/footer.scss";
 
 /* MEDIA QUERIES */
-@use "../sass/utils/media-resto.scss";
+@use "./utils/media-resto.scss";
 
 /* Animation pour l'apparition */
 @keyframes zoomInEffect {
@@ -44,4 +41,3 @@
 .main-content {
     animation: zoomInEffect 0.5s ease-out;
 }
-
